@@ -14,6 +14,10 @@
 		02D166442040B93100CD4AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D166422040B93100CD4AD9 /* LaunchScreen.storyboard */; };
 		02D1664F2040B93100CD4AD9 /* AccelerometorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1664E2040B93100CD4AD9 /* AccelerometorTests.swift */; };
 		02D1665A2040B93100CD4AD9 /* AccelerometorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D166592040B93100CD4AD9 /* AccelerometorUITests.swift */; };
+		02D1666A2040BB1400CD4AD9 /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D166682040BB1400CD4AD9 /* awa.png */; };
+		02D1666B2040BB1400CD4AD9 /* suiheiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 02D166692040BB1400CD4AD9 /* suiheiki.png */; };
+		02D1666D2040BF1500CD4AD9 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1666C2040BF1500CD4AD9 /* MeasureViewController.swift */; };
+		02D1666F2040BF6B00CD4AD9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1666E2040BF6B00CD4AD9 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		02D166552040B93100CD4AD9 /* AccelerometorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D166592040B93100CD4AD9 /* AccelerometorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometorUITests.swift; sourceTree = "<group>"; };
 		02D1665B2040B93100CD4AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D166682040BB1400CD4AD9 /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		02D166692040BB1400CD4AD9 /* suiheiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suiheiki.png; sourceTree = "<group>"; };
+		02D1666C2040BF1500CD4AD9 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		02D1666E2040BF6B00CD4AD9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		02D166382040B93000CD4AD9 /* Accelerometor */ = {
 			isa = PBXGroup;
 			children = (
+				02D166672040BB1400CD4AD9 /* 13_Resource */,
 				02D166392040B93000CD4AD9 /* AppDelegate.swift */,
 				02D1663B2040B93000CD4AD9 /* ViewController.swift */,
 				02D1663D2040B93000CD4AD9 /* Main.storyboard */,
 				02D166402040B93100CD4AD9 /* Assets.xcassets */,
 				02D166422040B93100CD4AD9 /* LaunchScreen.storyboard */,
 				02D166452040B93100CD4AD9 /* Info.plist */,
+				02D1666C2040BF1500CD4AD9 /* MeasureViewController.swift */,
+				02D1666E2040BF6B00CD4AD9 /* ResultViewController.swift */,
 			);
 			path = Accelerometor;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 				02D1665B2040B93100CD4AD9 /* Info.plist */,
 			);
 			path = AccelerometorUITests;
+			sourceTree = "<group>";
+		};
+		02D166672040BB1400CD4AD9 /* 13_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				02D166682040BB1400CD4AD9 /* awa.png */,
+				02D166692040BB1400CD4AD9 /* suiheiki.png */,
+			);
+			path = 13_Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +254,9 @@
 			files = (
 				02D166442040B93100CD4AD9 /* LaunchScreen.storyboard in Resources */,
 				02D166412040B93100CD4AD9 /* Assets.xcassets in Resources */,
+				02D1666B2040BB1400CD4AD9 /* suiheiki.png in Resources */,
 				02D1663F2040B93000CD4AD9 /* Main.storyboard in Resources */,
+				02D1666A2040BB1400CD4AD9 /* awa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D1666D2040BF1500CD4AD9 /* MeasureViewController.swift in Sources */,
 				02D1663C2040B93000CD4AD9 /* ViewController.swift in Sources */,
 				02D1663A2040B93000CD4AD9 /* AppDelegate.swift in Sources */,
+				02D1666F2040BF6B00CD4AD9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +454,7 @@
 				DEVELOPMENT_TEAM = PMQ762YM5Y;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisukesone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,7 +469,7 @@
 				DEVELOPMENT_TEAM = PMQ762YM5Y;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daisukesone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
